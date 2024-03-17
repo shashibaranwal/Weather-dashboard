@@ -1,0 +1,149 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+    
+}
+
+ /* Title - Mushroom Farming */
+ #title{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    text-align: center;
+    margin: 0;
+    margin-top: 10px;
+    color: whitesmoke;
+}
+
+hr{
+    opacity: 50%;
+    margin: 2px 10px;
+}
+
+body{
+    background: url(mushroom-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Box Content */
+.container-box{
+    margin-top: 50px;
+    width: 80%;
+    height: 80vh;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.container{
+    /* background-color: rgb(229, 179, 179); */
+    display: grid;
+    grid-template-columns: 4fr 5fr;
+    overflow-wrap: break-word;
+    width: 80%;
+    height: 400px;
+    max-width: 60vw;
+    margin: 40px auto;
+    padding: 20px;
+    padding-top: 10px;
+    background: rgba(170, 146, 146, 0);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(15.9px);
+    -webkit-backdrop-filter: blur(15.9px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    
+}
+
+/* Grid One - Time/location/ text */
+.grid-one{
+    /* border: 1px solid white; */
+    min-width: 275px;
+}
+
+.grid-one-item:nth-child(1){
+    display: flex;
+    justify-content: space-between;
+}
+.grid-one-item{
+    margin: 20px;
+    background-color: hsl(0, 7%, 81%);
+    border-radius: 10px;
+    padding: 10px;
+    color: grey;
+}
+.grid-one-item:hover{
+    cursor: pointer;
+    color: rgb(66, 63, 63);
+}
+
+#element{
+    margin-right: 0px;        /* Typing Effect */
+    color: black;
+    font-size: 1.5em;
+}
+
+.text{
+    height: 220px;
+    text-wrap:wrap;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#location{
+    font-weight: 400;
+}
+
+/* Api values - humidity/temperature/light */
+.api-value{ 
+    overflow: hidden auto;
+    /* border: 1px solid white; */
+}
+
+
+.value-section{
+    position: relative;
+    width: 90%;
+    background-color: hsl(0, 7%, 81%);
+    border-radius: 10px;
+    text-align: center;
+    margin: 20px;
+    padding-bottom: 10px;
+}
+
+.value-section div{
+    text-align: left;
+    margin-left: 10px;
+    padding-top: 5px;
+}
+.value{
+    font-family: 'Robot';
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.value-section span img{
+    color: grey;
+    width: 55px;
+}
+
+ /* All right reserved */
+.footer-bottom{
+    color: white;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap')

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mushroom Farming</title>
+    <link rel="stylesheet" href="mushroom.css" />
+  </head>
+  <script src="https://kit.fontawesome.com/190a8b6d58.js" crossorigin="anonymous"></script>
+
+  <body>
+    <div class="container-box">
+      <h1 id="title">🍄 Mushroom Farming</h1>
+      <div class="container">
+        <div class="grid-one">
+            <div class="grid-one-item"><i class="fa-regular fa-clock" > <span id="time"></span></i><i class="fa-regular fa-calendar"> <span>17/03/2024</span></i></div>
+            <div class="grid-one-item"><i class="fa-solid fa-location-dot" > <span id="location">Birgunj, Parsa</span></i></div>
+            <div class="grid-one-item text"><span id="element" ></span></div>
+        </div>
+        <div class="api-value">
+          <div id="humidity" class="value-section">
+            <div><label for="v0">Humidity:</label></div>
+            <hr />
+            <span class="value" id="v0">Value 0: Loading...</span>
+            <span><img src="https://static.thenounproject.com/png/985548-200.png" alt="" /></span>
+          </div>
+          <div id="temperature" class="value-section">
+            <div><label for="v1">Temperature:</label></div>
+            <hr />
+            <span class="value" id="v1">Value 1: Loading...</span>
+            <span><img src="temperature.svg" alt="" /></span>
+          </div>
+          <div id="light" class="value-section">
+            <div><label for="v2">Light Intensity:</label></div>
+            <hr />
+            <span class="value" id="v2">Value 2: Loading...</span>
+            <span><img src="light.svg" alt="" /></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>
+        High Tech Mushroom Farming - All Right Reserved © 2024. Design by 172.0.0.1
+      </p>
+    </div>
+
+    <script src="mushroom.js"></script>
+<!-- Typing Effect -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+        strings: ['🙋 Hey there,', 'Welcome To IoT Exhibition 2024.', 'We are Team 172.0.0.1', '#Team_172.0.0.1', '#IoT'],
+            typeSpeed: 50,
+            loop: true
+        });
+    </script>
+  </body>
+</html>
